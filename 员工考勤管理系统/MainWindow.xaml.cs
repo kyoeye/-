@@ -23,6 +23,7 @@ namespace 员工考勤管理系统
         public MainWindow()
         {
             InitializeComponent();
+            Myframe.NavigationService.Navigate(new Uri("Pagess/Page_Home.xaml",UriKind.Relative));
         }
     }
 }

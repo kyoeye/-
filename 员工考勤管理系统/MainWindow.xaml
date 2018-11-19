@@ -16,26 +16,7 @@
             <Button Name="YuangongGL_Button" Width="100" Content="员工管理" FontSize="18" Background="{x:Null}" BorderBrush="{x:Null}" />
             <Button Name="Qingjia_Button" Width="100" Content="请假" FontSize="18" Background="{x:Null}" BorderBrush="{x:Null}" />
         </StackPanel>
-        <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="说明：上午上班时间为： 下班时间为：  ； 下午上班时间为： 下午下班时间为： 五分钟内为迟到，超过则为旷工" Margin="5" FontSize="15" HorizontalAlignment="Center" Foreground="#FF5D5D5D" />
-
-        <StackPanel Orientation="Vertical" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" >
-            <TextBlock  Text="当前时间" FontSize="15" HorizontalAlignment="Center" />
-            <TextBlock Name="NowTime" Text="当前:时间" FontSize="45" HorizontalAlignment="Center" />
-            <StackPanel Orientation="Horizontal">
-                <Button Name="DaKaSB_Button" Height="50" Width="100" Margin="10,25,10,10" Content="打班上班" />
-                <Button Name="DaKaXB_Button" Height="50" Width="100" Margin="10,25,10,10" Content="打班上班" />
-
-            </StackPanel>
-        </StackPanel>
-        <StackPanel Grid.Row="1" VerticalAlignment="Bottom">
-            <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="说明：测试用" Margin="15,5,5,5" FontSize="15" HorizontalAlignment="Left" Foreground="#FF5D5D5D" />
-            <StackPanel Orientation="Horizontal">
-                <Button Name="Test_zcsb" Height="50" Width="100" Margin="10" Content="正常上班" />
-                <Button Name="Test_cdsb" Height="50" Width="100" Margin="10"  Content="迟到(迟到3分钟)" />
-                <Button Name="Test_kgsb" Height="50" Width="100" Margin="10"  Content="旷工(迟到30分钟)" />
-
-            </StackPanel>
-
-        </StackPanel>
+  
+        <Frame Name="Myframe" Grid.Row="1"/>
     </Grid>
 </Window>

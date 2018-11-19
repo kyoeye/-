@@ -70,10 +70,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pagess\Page_Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pagess\Page_GL.xaml.cs">
       <DependentUpon>Page_GL.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pagess\Page_Home.xaml.cs">
+      <DependentUpon>Page_Home.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

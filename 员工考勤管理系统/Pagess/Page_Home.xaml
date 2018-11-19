@@ -1,0 +1,34 @@
+﻿<Page x:Class="员工考勤管理系统.Pagess.Page_Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:员工考勤管理系统.Pagess"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page_Home">
+
+    <Grid Background="White">
+        <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="说明：上午上班时间为： 下班时间为：  ； 下午上班时间为： 下午下班时间为： 五分钟内为迟到，超过则为旷工" Margin="5" FontSize="15" HorizontalAlignment="Center" Foreground="#FF5D5D5D" />
+        <TextBlock Grid.Row="1" Name="Toast_IsChidao" TextWrapping="Wrap" Text="这里显示是否迟到" Margin="55" FontSize="25" HorizontalAlignment="Center" Foreground="#FF5D5D5D" />
+        <StackPanel Orientation="Vertical" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <TextBlock  Text="当前时间" FontSize="15" HorizontalAlignment="Center" />
+            <TextBlock Name="NowTime" Text="当前:时间" FontSize="45" HorizontalAlignment="Center" />
+            <StackPanel Orientation="Horizontal">
+                <Button Name="DaKaSB_Button" Height="50" Width="100" Margin="10,25,10,10" Content="打班上班" />
+                <Button Name="DaKaXB_Button" Height="50" Width="100" Margin="10,25,10,10" Content="打班上班" />
+
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1" VerticalAlignment="Bottom">
+            <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="说明：测试用" Margin="15,5,5,5" FontSize="15" HorizontalAlignment="Left" Foreground="#FF5D5D5D" />
+            <StackPanel Orientation="Horizontal">
+                <Button Name="Test_zcsb" Height="50" Width="100" Margin="10" Content="正常上班" />
+                <Button Name="Test_cdsb" Height="50" Width="100" Margin="10"  Content="迟到(迟到3分钟)" />
+                <Button Name="Test_kgsb" Height="50" Width="100" Margin="10"  Content="旷工(迟到30分钟)" />
+
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Page>
