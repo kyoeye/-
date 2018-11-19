@@ -13,23 +13,23 @@
             <ColumnDefinition Width="200" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <ScrollViewer >
-            <StackPanel Orientation="Vertical">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" >
+            <StackPanel Margin="10" Orientation="Vertical">
                 <TextBlock Margin="5,10,5,5" Text="职工号"/>
                 <TextBlock Name="Zgh" Text="职工号由数据库分配"/>
                 <TextBlock Margin="5,10,5,5" Text="部门"/>
                 <ComboBox Name="SelectBM_cb" ></ComboBox>
                 <TextBlock Margin="5,10,5,5" Text="姓名"/>
-                <TextBox Height="20" >姓名</TextBox>
+                <TextBox Name="Textbox_old" Height="20" />
                 <TextBlock Margin="5,10,5,5" Text="年龄"/>
-                <TextBox >年龄</TextBox>
+                <TextBox Name="Textbox_age" />
                 <TextBlock Margin="5,10,5,5" Text="性别"/>
                 <ComboBox>
                     <ComboBoxItem>男</ComboBoxItem>
                     <ComboBoxItem>女</ComboBoxItem>
                 </ComboBox>
                 <TextBlock Margin="5,10,5,5" Text="职称"/>
-                <TextBox >职称</TextBox>
+                <TextBox  Name="Textbox_zc"></TextBox>
                 <Grid Margin="20" Height="50" >
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>

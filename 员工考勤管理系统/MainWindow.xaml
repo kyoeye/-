@@ -12,11 +12,12 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Background="#FFF0F0F0" >
-            <Button Name="Homepage_Button" Width="100" Content="首页" FontSize="18" Background="{x:Null}" BorderBrush="{x:Null}" />
-            <Button Name="YuangongGL_Button" Width="100" Content="员工管理" FontSize="18" Background="{x:Null}" BorderBrush="{x:Null}" />
-            <Button Name="Qingjia_Button" Width="100" Content="请假" FontSize="18" Background="{x:Null}" BorderBrush="{x:Null}" />
+            <Button Name="Homepage_Button" Click="Homepage_Button_Click" Width="100" Content="首页" FontSize="18" Background="{x:Null}" BorderBrush="{x:Null}" />
+            <Button Name="YuangongGL_Button" Click="YuangongGL_Button_Click" Width="100" Content="员工管理" FontSize="18" Background="{x:Null}" BorderBrush="{x:Null}" />
+            <Button Name="Qingjia_Button" Click="Qingjia_Button_Click" Width="100" Content="请假" FontSize="18" Background="{x:Null}" BorderBrush="{x:Null}" />
+            <Button Name="XTGL_Button" Click="XTGL_Button_Click" Width="100" Content="系统管理" FontSize="18" Background="{x:Null}" BorderBrush="{x:Null}" />
         </StackPanel>
   
-        <Frame Name="Myframe" Grid.Row="1"/>
+        <Frame Name="Myframe" Grid.Row="1" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

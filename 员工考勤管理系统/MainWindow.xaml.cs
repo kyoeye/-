@@ -25,5 +25,26 @@ namespace 员工考勤管理系统
             InitializeComponent();
             Myframe.NavigationService.Navigate(new Uri("Pagess/Page_Home.xaml",UriKind.Relative));
         }
+
+        private void Homepage_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Myframe.NavigationService.Navigate(new Uri("Pagess/Page_Home.xaml", UriKind.Relative));
+        }
+
+        private void YuangongGL_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Myframe.NavigationService.Navigate(new Uri("Pagess/Page_GL.xaml", UriKind.Relative));
+
+        }
+
+        private void Qingjia_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Myframe.NavigationService.Navigate(new Uri("Pagess/Page_QJ.xaml", UriKind.Relative));
+        }
+
+        private void XTGL_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Myframe.NavigationService.Navigate(new Uri("Pagess/Page_XTGL.xaml", UriKind.Relative));
+        }
     }
 }
